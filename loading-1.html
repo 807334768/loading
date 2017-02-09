@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		body{
+			padding: 0px;
+			margin: 0px;
+			background-color: #3E7A89;
+		}
+		span {
+			  display: inline-block;
+			  height: 15px;
+			  width: 15px;
+			  /*background: #B92C28;*/
+			  border-radius: 0px;
+			  margin: -1px;
+			}
+		*[id*="loader-"] {
+			  margin-bottom: 30px;
+			}	
+		#loader-1{
+			width:107px;
+			height:15px;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			margin: auto;
+		}	
+		#loader-1 span:nth-child(1) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: scale 1s 0.1s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+          animation: scale 1s 0.1s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#loader-1 span:nth-child(2) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: scale 1s 0.2s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+          animation: scale 1s 0.2s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#loader-1 span:nth-child(3) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: scale 1s 0.3s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+          animation: scale 1s 0.3s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#loader-1 span:nth-child(4) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: scale 1s 0.4s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+          animation: scale 1s 0.4s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#loader-1 span:nth-child(5) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: scale 1s 0.5s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+          animation: scale 1s 0.5s infinite cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+    background: #93e1d7;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    margin: 0 3px;
+    background: #2fac9b;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+		</style>
+	</head>
+	<body>
+		<div id="loader-1">
+			<span></span><span></span><span></span><span></span><span></span>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		body{
+			padding: 0px;
+			margin: 0px;
+			background-color: #090909;
+		}
+		span {
+			  display: inline-block;
+			  height: 15px;
+			  width: 15px;
+			  /*background: #B92C28;*/
+			  border-radius: 0px;
+			  margin: -1px;
+			}
+		*[id*="loader-"] {
+			  margin-bottom: 30px;
+			}	
+		#loader-4{
+			width:87px;
+			height:15px;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			margin: auto;
+		}	
+		#loader-4 span:nth-child(1) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: push 1s 0.05s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+          animation: push 1s 0.05s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+}
+#loader-4 span:nth-child(2) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: push 1s 0.1s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+          animation: push 1s 0.1s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+}
+#loader-4 span:nth-child(3) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: push 1s 0.15s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+          animation: push 1s 0.15s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+}
+#loader-4 span:nth-child(4) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: push 1s 0.2s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+          animation: push 1s 0.2s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+}
+#loader-4 span:nth-child(5) {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+  border-radius: 500px;
+  -webkit-animation: push 1s 0.25s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+          animation: push 1s 0.25s infinite cubic-bezier(0.005, 0.56, 0.58, 1.59);
+}
+@-webkit-keyframes push {
+  0% {
+    -webkit-transform: translateX(0px) scale(0.9, 0.6);
+            transform: translateX(0px) scale(0.9, 0.6);
+  }
+  50% {
+    -webkit-transform: translateY(-20px) scale(0.7, 1.1);
+            transform: translateY(-20px) scale(0.7, 1.1);
+    background: #6bd6c8;
+  }
+  100% {
+    -webkit-transform: translateX(0px) scale(0.9, 0.6);
+            transform: translateX(0px) scale(0.9, 0.6);
+  }
+}
+		</style>
+	</head>
+	<body>
+		<div id="loader-4">
+		<span></span><span></span><span></span><span></span><span></span>
+	</div>
+	</body>
+</html>

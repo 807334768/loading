@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		body{
+			padding: 0px;
+			margin: 0px;
+			background-color: #3E7A89;
+		}
+		span {
+			  display: inline-block;
+			  height: 15px;
+			  width: 15px;
+			  /*background: #B92C28;*/
+			  border-radius: 0px;
+			  margin: -1px;
+			}
+		*[id*="loader-"] {
+			  margin-bottom: 30px;
+			}	
+		#loader-6{
+			width:87px;
+			height:15px;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 0px;
+			bottom: 0px;
+			margin: auto;
+		}	
+		#loader-6 span:nth-child(1) {
+		  -webkit-transform-origin: 0 50%;
+		          transform-origin: 0 50%;
+		  transform-perspective: 100px;
+		  -webkit-animation: cuve 1s 0.5s infinite;
+		          animation: cuve 1s 0.5s infinite;
+		}
+		#loader-6 span:nth-child(2) {
+			  -webkit-transform-origin: 0 50%;
+			          transform-origin: 0 50%;
+			  transform-perspective: 100px;
+			  -webkit-animation: cuve 1s 1s infinite;
+			          animation: cuve 1s 1s infinite;
+			}
+		#loader-6 span:nth-child(3) {
+		  -webkit-transform-origin: 0 50%;
+		          transform-origin: 0 50%;
+		  transform-perspective: 100px;
+		  -webkit-animation: cuve 1s 1.5s infinite;
+		          animation: cuve 1s 1.5s infinite;
+		}	
+		#loader-6 span:nth-child(4) {
+		  -webkit-transform-origin: 0 50%;
+		          transform-origin: 0 50%;
+		  transform-perspective: 100px;
+		  -webkit-animation: cuve 1s 2s infinite;
+		          animation: cuve 1s 2s infinite;
+		}	
+		#loader-6 span:nth-child(5) {
+			  -webkit-transform-origin: 0 50%;
+			          transform-origin: 0 50%;
+			  transform-perspective: 100px;
+			  -webkit-animation: cuve 1s 2.5s infinite;
+			          animation: cuve 1s 2.5s infinite;
+		}
+		@-webkit-keyframes cuve {
+			  0% {
+			    -webkit-transform: rotateY(-90deg) perspective(50px);
+			            transform: rotateY(-90deg) perspective(50px);
+			    background:red;
+			  }
+			  50% {
+			    -webkit-transform: rotateY(0deg);
+			            transform: rotateY(0deg);
+			    background: yellow;
+			  }
+			  100% {
+			    -webkit-transform: rotateY(90deg) perspective(50px);
+			            transform: rotateY(90deg) perspective(50px);
+			    -webkit-transform-origin: 100% 50%;
+			            transform-origin: 100% 50%;
+			    background: red;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<div id="loader-6">
+		<span></span><span></span><span></span><span></span><span></span>
+	</div>
+	</body>
+</html>
